@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.app.elemantra",
+      "sha256_cert_fingerprints": [
+        "09:6B:6C:92:56:62:CE:27:7F:2D:57:67:EB:3A:74:8F:0A:D4:D4:A9:4C:94:23:5A:A0:3B:8D:C9:9A:EC:D0:B9"
+      ]
+    }
+  }
+]
