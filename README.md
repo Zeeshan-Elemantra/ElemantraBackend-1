@@ -1,66 +1,68 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Elemantra App Backend
+## About Elemantra
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Elemantra App is a mobile application used to manage marketplace to discover leads, designers, contractors/skilled workers backed with project management capabilities.
 
-## About Laravel
+## How to install the project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Clone the Repository:
+   - Visit the GitHub repository containing the project.
+   - Click the green “Code” button and select “Download ZIP.” This will download the entire repository as a compressed ZIP file to    your local machine.
+   - Alternatively, you can use Git to clone the repository directly to your local environment. Open Git Bash or your terminal and navigate to the directory where you want to store the project. Then run the following command:
+     git clone <repository_url>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Download and install XAMPP.
+    - Start XAMPP control panel
+    - Start Apache and MySQL.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Open your phpMyAdmin.
 
-## Learning Laravel
+    * How to populate database with tables
+    - Create a new database.
+    - Open the .env file and update it with your MySQL database connection credentials (such as database name, username, and password).
+    - In phpMyAdmin select your database and click on import.
+    - Import elemantra.sql file.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## How to run the project
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- After following all the above steps open terminal and run "php artisan serve".
 
-## Laravel Sponsors
+## FOLDER STRUCTURE
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+ * ROUTES 
+  - routes>>api.php
+  - routes>>web.php
 
-### Premium Partners
+  //routes refers to the process of defining the routes that your application will respond to. When a request is made to your application, Laravel’s routing system determines which route matches the request and calls the corresponding controller method or closure to generate the response.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+--------------------------------------------------------------------------------------------------------------------------------------
 
-## Contributing
+ * CONTROLLERS
+  - App>>Http>>Controllers
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+  //controllers play a crucial role in organizing your application’s logic and handling incoming HTTP requests.
 
-## Code of Conduct
+--------------------------------------------------------------------------------------------------------------------------------------
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+ * MIDDLEWARE
+  - App>>Http>>Middleware
 
-## Security Vulnerabilities
+  //middleware acts as an intermediary layer between the user’s request and the application. It plays a crucial role in controlling and filtering HTTP traffic before it reaches the application or before the response is sent back to the user.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+--------------------------------------------------------------------------------------------------------------------------------------
 
-## License
+ * MODELS
+  - app>>Models
+   
+   // A Model represents a database table in your application. It acts as an intermediary between your application code and the database, allowing you to query and manipulate data.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## KNOWN ISSUES AND FIXES
+
+ * no .env file - 
+    fix -  create a .env file.
+           - copy all code from .env.example file and paste it in .env file then update it with your MySQL database connection.
+
+
